@@ -1,0 +1,51 @@
+﻿{
+	"code": "staxel.treasure.storeShelf.farm",
+	"additive": true,
+	"entries": [
+		{
+			"weight": 1,
+			"items": [
+				{
+					"kind": "staxel.item.Placer",
+					"tile": "mods.barrybadpak.totem.GreenhouseSign"
+				}
+			]
+		},
+		{
+			"weight": 1,
+			"items": [
+				{
+					"kind": "staxel.item.Placer",
+					"tile": "mods.barrybadpak.door.Greenhouse_WhiteDoor"
+				}
+			]
+		},
+		{
+			"weight": 1,
+			"items": [
+				{
+					"kind": "staxel.item.Placer",
+					"tile": "mods.barrybadpak.roofing.Greenhouse_Straight"
+				}
+			]
+		},
+		{
+			"weight": 1,
+			"items": [
+				{
+					"kind": "staxel.item.Placer",
+					"tile": "mods.barrybadpak.roofing.Greenhouse_Flat"
+				}
+			]
+		},
+		{
+			"weight": 1,
+			"items": [
+				{
+					"kind": "staxel.item.Placer",
+					"tile": "mods.barrybadpak.walls.Greenhouse_Straight"
+				}
+			]
+		}
+	]
+}

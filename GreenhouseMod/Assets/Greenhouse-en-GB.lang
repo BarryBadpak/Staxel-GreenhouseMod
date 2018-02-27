@@ -1,0 +1,20 @@
+﻿language.code=en-GB
+language=English
+
+// Skin color translations
+mods.barrybadpak.totem.Greenhouse=Greenhouse
+mods.barrybadpak.totem.Greenhouse.name=Greenhouse
+
+mods.barrybadpak.totem.GreenhouseWarning=Removing the greenhouse will result in your crops possibly wilting
+
+// Roof
+mods.barrybadpak.roofing.Greenhouse_Straight.description=A greenhouse roof.
+mods.barrybadpak.roofing.Greenhouse_Straight.name=Greenhouse roof
+mods.barrybadpak.roofing.Greenhouse_Flat.description=A greenhouse roof tile.
+mods.barrybadpak.roofing.Greenhouse_Flat.name=Greenhouse roof tile
+// Door
+mods.barrybadpak.door.Greenhouse_WhiteDoor.description=A greenhouse door.
+mods.barrybadpak.door.Greenhouse_WhiteDoor.name=Greenhouse door
+// Wall
+mods.barrybadpak.walls.Greenhouse_Straight.description=A greenhouse wall.
+mods.barrybadpak.walls.Greenhouse_Straight.name=Greenhouse wall

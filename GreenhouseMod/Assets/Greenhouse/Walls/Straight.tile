@@ -1,0 +1,208 @@
+﻿{
+	"__inherits": "staxel/tileObject/decorativewall.config",
+	"attachToBelow": false,
+	"autoTileInfo": [
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "back",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				},
+				{
+					"direction": "right",
+					"rotationToLookFor": 3,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 3,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_OuterCorner"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "front",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				},
+				{
+					"direction": "right",
+					"rotationToLookFor": 1,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 0,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_OuterCorner"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse corner"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 0,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_OuterCorner"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 1,
+					"tileCategoriesToLookFor": [
+						"greenhouse corner"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 1,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_OuterCorner"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 2,
+					"tileCategoriesToLookFor": [
+						"greenhouse corner"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 2,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_OuterCorner"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 3,
+					"tileCategoriesToLookFor": [
+						"greenhouse corner"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 3,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_OuterCorner"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 0,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_Straight"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 1,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 1,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_Straight"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 2,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 2,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_Straight"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 3,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 3,
+					"tileToPlace": "mods.barrybadpak.walls.Greenhouse_Straight"
+				}
+			]
+		}
+	],
+	"categories": [
+		"greenhouse",
+		"tiled",
+		"tile",
+		"tiling",
+		"tiles",
+		"greenhouse straight"
+	],
+	"code": "mods.barrybadpak.walls.Greenhouse_Straight",
+	"placementDirections": [ "all" ],
+	"pricing": {
+		"buyable": true,
+		"sellPrice": 6,
+		"value": 10
+	},
+	"searchable": true,
+	"stepSoundGroup": "staxel.sounds.WoodFootSteps",
+	"voxels": "mods/GreenhouseMod/Greenhouse/Walls/Straight.qb"
+}

@@ -1,0 +1,17 @@
+﻿{
+  "code": "mods.barrybadpak.totem.Greenhouse",
+  "categories": [],
+  "region": {
+    "x": 5,
+    "y": 3,
+    "z": 6
+  },
+  "centreOffset": {
+    "x": 6,
+    "y": 2,
+    "z": 2
+  },
+  "tiers": 1,
+  "requiresRoof": true,
+  "warningNotification": "mods.barrybadpak.notifications.GreenhouseTotemWarning"
+}

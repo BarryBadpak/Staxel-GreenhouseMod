@@ -1,0 +1,140 @@
+﻿{
+	"__inherits": "staxel/tileObject/roof.config",
+	"attachToBelow": false,
+	"autoTileInfo": [
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "back",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse roof straight"
+					]
+				},
+				{
+					"direction": "right",
+					"rotationToLookFor": 3,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 2,
+					"tileToPlace": "mods.barrybadpak.roofing.Greenhouse_OuterCornerRight"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "left",
+					"secondDirection": "down",
+					"rotationToLookFor": 2,
+					"tileCategoriesToLookFor": [
+						"greenhouse roof corner right"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 2,
+					"tileToPlace": "mods.barrybadpak.roofing.Greenhouse_OuterCornerRight"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "front",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse roof straight"
+					]
+				},
+				{
+					"direction": "right",
+					"rotationToLookFor": 1,
+					"tileCategoriesToLookFor": [
+						"greenhouse straight"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 0,
+					"tileToPlace": "mods.barrybadpak.roofing.Greenhouse_OuterCornerLeft"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "right",
+					"secondDirection": "down",
+					"tileCategoriesToLookFor": [
+						"greenhouse roof corner left"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 2,
+					"tileToPlace": "mods.barrybadpak.roofing.Greenhouse_OuterCornerLeft"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 0,
+					"tileCategoriesToLookFor": [
+						"greenhouse corner"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 0,
+					"tileToPlace": "mods.barrybadpak.roofing.Greenhouse_OuterCornerLeft"
+				}
+			]
+		},
+		{
+			"directionsToLookIn": [
+				{
+					"direction": "down",
+					"rotationToLookFor": 2,
+					"tileCategoriesToLookFor": [
+						"greenhouse corner"
+					]
+				}
+			],
+			"results": [
+				{
+					"rotation": 1,
+					"tileToPlace": "mods.barrybadpak.roofing.Greenhouse_OuterCornerRight"
+				}
+			]
+		}
+	],
+	"categories": [
+		"greenhouse",
+		"tiled",
+		"tile",
+		"tiling",
+		"tiles",
+		"greenhouse roof straight"
+	],
+	"code": "mods.barrybadpak.roofing.Greenhouse_Straight",
+	"pricing": {
+		"buyable": true,
+		"sellPrice": 6,
+		"value": 10
+	},
+	"searchable": true,
+	"stepSoundGroup": "staxel.sounds.WoodFootSteps",
+	"voxels": "mods/GreenhouseMod/Greenhouse/Roofing/Straight.qb"
+}

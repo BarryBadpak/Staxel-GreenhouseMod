@@ -1,0 +1,28 @@
+﻿{
+  "__inherits": "staxel/tileObject/totems/totemBase.config",
+  "attachToBelow": true,
+  "categories": [
+    "misc",
+    "totem",
+    "sign"
+  ],
+  "code": "mods.barrybadpak.totem.GreenhouseSign",
+  "compound": {
+    "size": {
+      "x": 1,
+      "y": 2,
+      "z": 1
+    }
+  },
+  "pricing": {
+    "buyable": true,
+    "sellPrice": 1500,
+    "value": 1500
+  },
+  "randomizePosition": false,
+  "searchable": true,
+  "totem": {
+    "code": "mods.barrybadpak.totem.Greenhouse"
+  },
+  "voxels": "mods/GreenhouseMod/Greenhouse/Totem/GreenhouseTotem.qb"
+}

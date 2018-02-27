@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>13d5b5d1-9b78-4b41-aee2-5d52600a9800</ProjectGuid>
+    <ProjectGuid>{13D5B5D1-9B78-4B41-AEE2-5D52600A9800}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GreenhouseMod</RootNamespace>
     <AssemblyName>GreenhouseMod</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,32 +21,83 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\SoftwareLibraries\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Plukit.Base">
+      <HintPath>..\..\..\..\SteamLibrary\steamapps\common\Staxel\bin\Plukit.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Staxel">
+      <HintPath>..\..\..\..\SteamLibrary\steamapps\common\Staxel\bin\Staxel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sunbeam">
+      <HintPath>..\..\Sunbeam\Sunbeam\bin\Release\Sunbeam.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="GreenhouseModManager.cs" />
+    <Compile Include="Patches\CheckPlantGrowthStageActionNS\CheckPlantGrowthStageActionPatch.cs" />
+    <Compile Include="Patches\FarmingDatabaseNS\DailyVisitPatch.cs" />
+    <Compile Include="PlantLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="GreenhouseMod.mod">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="preview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Greenhouse-en-GB.lang" />
+    <None Include="Assets\Greenhouse\Door\WhiteDoor.tile" />
+    <None Include="Assets\Greenhouse\Door\WhiteDoor.qb" />
+    <None Include="Assets\Greenhouse\Roofing\Flat.qb" />
+    <None Include="Assets\Greenhouse\Roofing\Flat.tile" />
+    <None Include="Assets\Greenhouse\Roofing\OuterCornerRight.tile" />
+    <None Include="Assets\Greenhouse\Roofing\OuterCornerLeft.qb" />
+    <None Include="Assets\Greenhouse\Roofing\OuterCornerRight.qb" />
+    <None Include="Assets\Greenhouse\Roofing\OuterCornerLeft.tile" />
+    <None Include="Assets\Greenhouse\Roofing\Straight.qb" />
+    <None Include="Assets\Greenhouse\Roofing\Straight.tile" />
+    <None Include="Assets\Greenhouse\Totem\Greenhouse.totem" />
+    <None Include="Assets\Greenhouse\Totem\GreenhouseSign.tile" />
+    <None Include="Assets\Greenhouse\Totem\GreenhouseTotem.qb" />
+    <None Include="Assets\Greenhouse\Totem\GreenhouseTotemWarning.notification" />
+    <None Include="Assets\Greenhouse\StoreShelfFarm.treasure" />
+    <None Include="Assets\Greenhouse\Walls\OuterCorner.qb" />
+    <None Include="Assets\Greenhouse\Walls\OuterCorner.tile" />
+    <None Include="Assets\Greenhouse\Walls\Straight.qb" />
+    <None Include="Assets\Greenhouse\Walls\Straight.tile" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(ProjectDir)Assets\* $(ProjectDir)$(OutDir) /s /e /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

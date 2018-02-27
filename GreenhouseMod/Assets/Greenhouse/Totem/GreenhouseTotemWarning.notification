@@ -1,0 +1,6 @@
+﻿{
+  "__inherits": "staxel/notifications/GeneralNotification.config",
+  "code": "mods.barrybadpak.notifications.GreenhouseTotemWarning",
+  "translationCode": "mods.barrybadpak.totem.GreenhouseWarning",
+  "icon": "staxel/notifications/icons/NoticeIcon.png",
+}
